@@ -1,7 +1,7 @@
 function myFunction() {
-  var token = 'xxx'
-  var ss = SpreadsheetApp.openById('xxx')
-  var sh = ss.getSheetByName('xxx')
+  var token = 'DWe1WazVCXQFdLVW74bwc9hYriDeDd5yt0r1F5DOn3V'
+  var ss = SpreadsheetApp.openById('1PhAvFqU8UmJhVm1ok9F8wY2EZDdjVP-3A0-OuesEI8I')
+  var sh = ss.getSheetByName('AUTO GUI TIN NHAN')
   var row = sh.getLastRow();
 
   var today = Utilities.formatDate(new Date(), "GMT+7", "dd/MM/yyyy")
@@ -26,7 +26,7 @@ function sendLineNotify(message, token) {
     "payload": {
       "message": message,
     },
-    "headers": { "Authorization": "Bearer " + token }
+    "headers": { "Authorization": "Be " + token }
   };
   UrlFetchApp.fetch("https://notify-api.line.me/api/notify", options);
 }
